@@ -65,7 +65,7 @@ const Stream = ({
             "outplayer" + serverUrl.split("http")[1] + infoHash + "/" + fileIdx;
         } else {
           window.location.href =
-            "outplayer" +
+            "infuse://x-callback-url/play?url=https" +
             Buffer.from(
               deepLinks.externalPlayer.href.split("base64,")[1].split('"')[0],
               "base64"
