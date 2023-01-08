@@ -62,7 +62,7 @@ const Stream = ({
           const serverUrl = streamingServer.selected.transportUrl;
 
           window.location.href =
-            "outplayer" + serverUrl.split("http")[1] + infoHash + "/" + fileIdx;
+            "vlc" + serverUrl.split("http")[1] + infoHash + "/" + fileIdx;
         } else {
           window.location.href =
             "infuse://x-callback-url/play?url=https" +
